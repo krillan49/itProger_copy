@@ -64,7 +64,7 @@ header a[title="На главную страницу"] {
   padding: .7rem 1.2rem;
 }
 #h1-box3>a:hover {
-  background-color: rgb(176, 79, 155);
+  background-color: rgb(79, 106, 176);
   color: white;
 }
 
@@ -121,6 +121,82 @@ header a[title="На главную страницу"] {
 =====================================*/
 
 #jumbotron {
-  background: url('../img/git-branch.jpg') center center;
-  opacity: 0.6;
+  height: 20rem;
+  background: rgb(180, 180, 180) url('../img/git-branch.jpg') center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#jum-content { 
+  min-width: 40%;
+  color: white;
+  text-shadow: 5px 5px 5px #c53;
+}
+
+#jum-content>h1{ font-size: 4rem; }
+
+#jum-content>span { margin-right: 3rem; }
+
+#jum-content>a { color: white; }
+#jum-content>a:hover { text-decoration: underline; }
+
+@media (max-width: 750px) {
+  #jumbotron { height: 15rem; }
+  #jum-content { text-shadow: 3px 3px 3px #c53; }
+  #jum-content>h1 { font-size: 3rem; }
+}
+
+@media (max-width: 550px) {
+  #jumbotron { height: 10rem; }
+  #jum-content { text-shadow: 1px 1px 1px #c53; }
+  #jum-content>h1 { font-size: 1.5rem; }
+}
+
+
+/*=====================================
+Основной блок
+=====================================*/
+
+main { 
+  width: 70%; 
+  margin-top: 3rem;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*=====================================
+Средний блок
+=====================================*/
+
+#midle {
+  border: 1px solid red;
+
+  flex-basis: 68%;
+}
+
+#m-nav { font-size: .9rem; }
+#m-nav>a { color: #333; }
+#m-nav>a:hover { color: #c53; }
+
+#m-head {
+  display: flex;
+  justify-content: space-between;
+}
+#m-head .m-head-1 { flex-basis: 30%; } /* хз как поменять размер */
+
+
+/*=====================================
+Боковой блок
+=====================================*/
+
+aside {
+  border: 1px solid red;
+
+  flex-basis: 25%;
 }
