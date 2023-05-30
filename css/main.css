@@ -180,15 +180,25 @@ main {
   flex-basis: 68%;
 }
 
+/* Меню */
 #m-nav { font-size: .9rem; }
 #m-nav>a { color: #333; }
 #m-nav>a:hover { color: #c53; }
 
+/* Блок с картинкой и соц кнопками */
 #m-head {
   display: flex;
   justify-content: space-between;
+  border: 1px solid green;
 }
-#m-head .m-head-1 { flex-basis: 30%; } /* хз как поменять размер */
+.m-head-1 { 
+  flex-basis: 100%; 
+  border: 1px solid blue;
+} /* хз как поменять размер */
+
+.m-head-1>img {
+  width: 100%;
+}
 
 
 /*=====================================
